@@ -5,11 +5,11 @@ namespace RegistryLib
 {
     public class RegistryUtils
     {
-        public static void Register()
+        public static void Register(string clientId)
         {
             var classes = Registry.CurrentUser.OpenSubKey("Software", true).OpenSubKey("Classes", true);
-            // TODO Client Id
-            RegistryKey key = classes.CreateSubKey("wsapp");
+            // Client Id
+            RegistryKey key = classes.CreateSubKey($"open-taptap-{clientId}");
             // 
             key.SetValue("URL Protocol", "code");
             key.CreateSubKey(@"shell\open\command").SetValue("", $"{Process.GetCurrentProcess().MainModule.FileName} %1");

@@ -16,7 +16,7 @@ public class Sample : MonoBehaviour
         string exePath = Process.GetCurrentProcess().MainModule.FileName;
         
         exePathText.text = exePath;
-        RegistryUtils.Register();
+        RegistryUtils.Register("hn5RcJei2JxCYlS0");
     }
 
     // Update is called once per frame

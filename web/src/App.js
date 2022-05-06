@@ -11,7 +11,7 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="wsapp:"
+          href="open-taptap-hn5RcJei2JxCYlS0:"
           target="_blank"
           rel="noopener noreferrer"
         >
